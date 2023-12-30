@@ -1,0 +1,94 @@
+.card{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.card .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-overlay1);
+}
+
+.card .card-body h1{
+    color: var(--button-text);
+}
+
+.card .card-body form{
+    background-color: var(--background-color11);
+    padding: 30px 20px;
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card .card-body form .mb-3{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.card .card-body form .mb-3 label{
+    color: var(--text-dark);
+    font-size: smaller;
+}
+
+.card .card-body form .mb-3 input{
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid var(--button-tertiary-background);
+    height: 23px;
+}
+
+.card .card-body form .mb-3 input:focus{
+    outline: 1px solid var(--button-tertiary-background);
+    border-bottom: none;
+    border-radius: 5px;
+    color: var(--button-text);
+}
+ 
+.card .card-body form .text-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.card .card-body form .alert-danger{
+    color: var(--color-red);
+    text-align: center;
+}
+
+.card .card-body form .alert-primary{
+    color: var(--color-red);
+    text-align: center;
+}
+
+.card .card-body form .text-center button{
+    color: var(--button-text);
+    background-color: var(--button-tertiary-background);
+    padding: 7px 15px;
+    transition: all .3s ease-in-out;
+}
+
+.card .card-body form .text-center button:hover{
+    border-radius: 15px;
+}
+
+.card .card-body form p{
+    text-align: center;
+    color: var(--text-dark);
+}
+
+.card .card-body form p a{
+    text-decoration: none;
+    color: var(--color-gold1);
+}

@@ -1,0 +1,70 @@
+.container-cart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color11);
+    gap: 20px;
+    height: 100%;
+}
+
+.container-cart .notice {
+    color: var( --button-tertiary-background);
+}
+
+.container-cart .content .cards .card-component{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--background-color3);
+    margin-top: 20px;
+    padding: 20px 10px;
+    gap: 20px;
+    background-color: var(--text-dark);
+
+}
+
+.container-cart .content .cards .card-component img{
+    width: 280px !important;
+    flex: 1;
+    height: 300px !important;
+}
+
+.container-cart .content .cards .card-component .card-content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-cart .content .cards .card-component .card-content h5{
+    color: var(--color-gold1);
+}
+
+.container-cart .content .cards .card-component .card-content p{
+    margin-top: -5px;
+    text-align: center;
+}
+
+.container-cart .content .cards .card-component .card-content>button{
+    background-color: var(--button-secondary-hover);
+    padding: 7px 15px;
+    color: var(--button-text);
+}
+
+.container-cart .top{
+    display: flex;
+    gap: 100px;
+    padding: 0px 0px 30px 0px;
+}
+
+.container-cart .top button{
+    padding: 7px 15px;
+    color: var(--button-text);
+}
+
+.container-cart .top button:nth-child(1){
+    background-color: var( --color-orangered);
+}
+
+.container-cart .top button:nth-child(2){
+    background-color: var(--button-tertiary-background);
+}

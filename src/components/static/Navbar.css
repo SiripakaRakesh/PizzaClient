@@ -1,0 +1,116 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--background-color1);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+.nav-container img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.nav-container .admin-log .navigate-ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-container .admin-log .navigate-ul li button{
+    padding: 7px 15px;
+}
+
+.nav-container .admin-log .navigate-ul li:nth-child(1) button{
+    background-color: var( --button-tertiary-background);
+}
+
+.nav-container .admin-log .navigate-ul li:nth-child(2) button{
+    border: 3px solid var( --button-tertiary-background);
+}
+
+.nav-container .admin-log .navigate-ul li:nth-child(2) button a{
+    color: var(--background-color2);
+}
+
+.nav-container .admin-log .navigate-ul li:nth-child(3) button{
+    background-color: var(--button-secondary-hover);
+}
+
+
+.nav-container .admin-log .navigate-ul li button a{
+    text-decoration: none;
+    color: var(--button-text);
+}
+
+.nav-container p{
+    color: var(--button-text);
+    text-align: center;
+}
+
+.nav-container .nav-right{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-container .nav-right li button{
+    padding: 7px 15px;
+}
+
+.nav-container .nav-right li:nth-child(1) button{
+    background-color: var(--button-tertiary-background);
+}
+
+.nav-container .nav-right li:nth-child(2) button{
+    background-color: var(--color-gold1);
+}
+
+.nav-container .nav-right li button a{
+    text-decoration: none;
+    color: var(--button-text);
+}
+
+.admin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin .admin_navigation{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.admin .admin_navigation li button{
+    padding: 7px 15px;
+}
+
+.admin .admin_navigation li button a{
+    text-decoration: none;
+}
+
+.admin .admin_navigation li:nth-child(odd) button {
+    background-color: var(--button-tertiary-background);
+}
+
+.admin .admin_navigation li:nth-child(2) button{
+    background-color: var(--color-gold1);
+}
+
+.admin .admin_navigation li:nth-child(odd) button a{
+    color: var(--button-text);
+}
+
+.admin .admin_navigation li:nth-child(4) button{
+    background-color: var(--button-secondary-hover);
+}
+
+.admin .admin_navigation li:nth-child(4) button a{
+    color: var(--button-text);
+}
+

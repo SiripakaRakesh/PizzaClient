@@ -1,0 +1,365 @@
+.container .container-header {
+    background-image: url('https://images.unsplash.com/photo-1506354666786-959d6d497f1a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDA1NjE1MDV8&ixlib=rb-4.0.3&q=85');
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .container-header .container-header-overlay{
+    height: 60vh;
+    background-color: var(--color-overlay1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.container .container-header .container-header-overlay h1{
+    color: var(--button-hover);
+    font-size: 70px;
+}
+
+.container .container-header .container-header-overlay h1 a{
+    text-decoration: none;
+    font-size: 25px;
+    background-color: var(--button-tertiary-background);
+    color: var(--button-text);
+    padding: 7px 20px;
+    border-radius: 20px;
+}
+
+.container .container-header .container-header-overlay .images img{
+    width: 500px;
+    border-radius: 50%;
+    height: 500px;
+}
+
+@media only screen and (max-width: 1239px) {
+    
+    .container .container-header .container-header-overlay h1{
+        color: var(--button-hover);
+        font-size: 50px;
+    }
+    
+    .container .container-header .container-header-overlay .images img{
+        width: 400px;
+        border-radius: 50%;
+        height: 400px;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .container .container-header .container-header-overlay h1{
+        color: var(--button-hover);
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .container .flex-list .box img{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+    
+    .container .container-header .container-header-overlay .images img{
+        width: 350px;
+        border-radius: 50%;
+        height: 350px;
+    }
+
+    .pizza-container{
+        display: flex;
+        padding: 30px 5px;
+        align-items: center;
+        background-color: var(--background-color2);
+        flex-direction: column;
+    }
+
+    .pizza-container .right img{
+        height: 300px;
+        width: 500px;
+    }
+
+    .pizza-container .left h2{
+        font-size: 35px;
+        color: var(--color-bisque);
+    }
+
+    .track-pizza{
+        display: flex;
+        margin-top: 30px;
+        padding: 40px 10px;
+        background-color: var(--background-color11);
+        flex-direction: column;
+    }
+
+    .track-pizza .line{
+        width: 500px;
+        height: 5px;
+        background-color: var(--color-bisque);
+        border-radius: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 400px){
+    .container .container-header .container-header-overlay{
+        height: 50vh;
+        background-color: var(--color-overlay1);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container .container-header .container-header-overlay{
+        height: 50vh;
+        background-color: var(--color-overlay1);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .container .container-header .container-header-overlay h1{
+        color: var(--button-hover);
+        font-size: 35px;
+        text-align: center;
+    }
+    
+    .container .container-header .container-header-overlay .images img{
+        width: 300px;
+        border-radius: 50%;
+        height: 300px;
+    }
+
+    .container .flex-list .box img{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .pizza-container .right img{
+        width: 250px;
+        height: 220px;
+    }
+
+    .pizza-container .left h2{
+        font-size: 30px;
+        color: var(--color-bisque);
+    }
+
+    .track-pizza .left img{
+        width: 280px;
+        height: 220px;
+    }
+    
+}
+
+@media only screen and (max-width: 550px) {
+    .pizza-container .right img{
+        height: 300px;
+        width: 350px;
+    }
+
+    .track-pizza .left img{
+        width: 350px;
+        height: 300px;
+    }
+}
+/* =================================================================*/
+/* =================================================================*/
+/* =================================================================*/
+/* =================================================================*/
+/* =================================================================*/
+
+.container .flex-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 30px;
+}
+
+.container .flex-list .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.container .flex-list .box img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+}
+
+.container .flex-list .box img:hover{
+    transform: scale(1.03);
+}
+
+.container .flex-list .box:nth-child(1) h3{
+    color: var(--color-navy);
+}
+
+.container .flex-list .box:nth-child(2) h3{
+    color: var(--button-tertiary-background);
+}
+
+.container .flex-list .box:nth-child(3) h3{
+    color: var(--color-purple);
+}
+
+.container .flex-list .box p{
+    text-align: center;
+}
+
+.container .flex-list .box a{
+    text-decoration: none;
+    background-color: var(--background-color11);
+    padding: 7px 15px;
+    color: var(--button-text);
+    transition: all 0.5s ease-in-out;
+}
+
+.container .flex-list .box a:hover{
+    border-radius: 20px;
+}
+
+/* =================================================================*/
+/* =================================================================*/
+/* =================================================================*/
+/* =================================================================*/
+/* =================================================================*/
+
+.pizza-container{
+    display: flex;
+    padding: 30px 5px;
+    align-items: center;
+    background-color: var(--background-color2);
+}
+
+.pizza-container .left{
+    flex: 1;
+}
+
+.pizza-container .left h2{
+    font-size: 45px;
+    color: var(--color-bisque);
+}
+
+.pizza-container .left p{
+    color: var(--button-text);
+}
+
+.pizza-container .right{
+    flex: 1;
+}
+
+.pizza-container .right img{
+    height: 400px;
+}
+
+@media only screen and (max-width:1000px) {
+    .pizza-container{
+        display: flex;
+        padding: 30px 5px;
+        align-items: center;
+        background-color: var(--background-color2);
+        flex-direction: column;
+    }
+
+    .container .container-header .container-header-overlay{
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+/* =================================================================*/
+/* =================================================================*/
+/* =================================================================*/
+/* =================================================================*/
+/* =================================================================*/
+.track-pizza{
+    display: flex;
+    margin-top: 30px;
+    padding: 40px 10px;
+    background-color: var(--background-color11);
+    gap: 10px;
+    align-items: center;
+}
+
+.track-pizza .line{
+    height: 500px;
+    width: 5px;
+    background-color: var(--color-bisque);
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:800px ) {
+    .track-pizza .line{
+        display: none;
+    }
+    
+}
+
+.track-pizza .left{
+    flex: 1;
+}
+
+.track-pizza .left img{
+    height: 500px;
+}
+
+.track-pizza .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.track-pizza .right .right-item h3{
+    color: var(--color-gold1);
+}
+
+.track-pizza .right .right-item p{
+    color: var(--button-text);
+}
+
+.track-pizza .right .links{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.track-pizza .right .links a{
+    color: var(--button-text);
+    text-decoration: none;
+    padding: 7px 15px;
+}
+
+.track-pizza .right .links a:nth-child(1){
+    background-color: var(--button-tertiary-background);
+}
+
+.track-pizza .right .links a:nth-child(2){
+    border: 1px solid var(--button-tertiary-background);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,0 +1,103 @@
+.pay-now .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.pay-now .container form{
+    background-color: var(--background-color2);
+    padding: 30px 20px;
+    border-radius: 15px;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pay-now .container form .mb-3{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.pay-now .container form .mb-3 label{
+    color: var(--button-text);
+}
+
+.pay-now .container form button{
+    padding: 7px 15px;
+    margin-top: 20px;
+    background-color: var(--button-tertiary-background);
+    color: var(--button-text);
+}
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+.container-payment .payment{
+    display: flex;
+}
+
+.container-payment .payment .cards {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-payment .payment .cards .card{
+    background-color: var(--background-color11);
+    display: flex;
+    flex-direction: column !important;
+    height: 400px;
+    width: 300px;
+    align-items: center;
+}
+
+.container-payment .payment .cards .card h3{
+    color: var(--button-text);
+}
+
+.container-payment .payment .cards .card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-payment .payment .cards .card .card-content table{
+    border: 1px solid var(--button-text);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-payment .payment .cards .card .card-content table th, td{
+    color: var(--button-text);
+}
+
+.container-payment .payment .cards .card .card-content .buttons{
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.container-payment .payment .cards .card .card-content .buttons button{
+    padding: 7px 15px;
+}
+
+.container-payment .payment .cards .card .card-content .buttons button:nth-child(1){
+    background-color: var(--button-tertiary-background);
+    color: var(--button-text);
+}
+
+.container-payment .payment .cards .card .card-content .buttons button:nth-child(2){
+    background-color: var(--color-gold1);
+    color: var(--button-text);
+}
+
+
+

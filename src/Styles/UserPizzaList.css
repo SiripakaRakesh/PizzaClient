@@ -1,0 +1,73 @@
+.container-pizza-list{
+    display: flex;
+    background-color: var(--background-color2);
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-pizza-list .top {
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-pizza-list .top h1{
+    color: var(--button-text);
+}
+
+.container-pizza-list .top input{
+    height: 27px;
+    width: 300px;
+    border-radius: 7px;
+}
+
+.container-pizza-list .row .cards{
+    display: flex;
+    flex-direction: column;
+}
+.container-pizza-list .row .cards .card{
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 300px;
+    align-items: center;
+    background-color: var(--button-text);
+    margin-top: 30px;
+    padding: 30px 10px;
+    justify-content: center;
+    align-items: center;
+}
+.container-pizza-list .row .cards .card img{
+    width: 270px;
+    height: 300px;
+}
+
+.container-pizza-list .row .cards .card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-pizza-list .row .cards .card .card-content h5{
+    color: var(--color-gold1);
+}
+
+.container-pizza-list .row .cards .card .card-content .btn-group{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.container-pizza-list .row .cards .card .card-content .btn-group button{
+    padding: 7px 15px;
+}
+
+.container-pizza-list .row .cards .card .card-content .btn-group button:nth-child(1){
+    background-color: var(--button-tertiary-background);
+    color: var(--button-text);
+}
+
+.container-pizza-list .row .cards .card .card-content .btn-group button:nth-child(2){
+    border: 1px solid var(--button-tertiary-background);
+}

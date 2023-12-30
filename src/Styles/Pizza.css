@@ -1,0 +1,342 @@
+.custom-pizza-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="28" height="49" viewBox="0 0 28 49"%3E%3Cg fill-rule="evenodd"%3E%3Cg id="hexagons" fill="%239C92AC" fill-opacity="0.4" fill-rule="nonzero"%3E%3Cpath d="M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+}
+
+.custom-pizza-container .custom-pizza-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 60vh;
+}
+
+.custom-pizza-container .custom-pizza-form .title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.custom-pizza-container .custom-pizza-form .title img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.custom-pizza-container .custom-pizza-form button{
+    padding: 10px 20px;
+    color: var(--button-text);
+    background-color: var(--button-tertiary-background);
+    border: none;
+    transition: all .3s ease-in-out;
+}
+
+.custom-pizza-container .custom-pizza-form button:hover{
+    border-radius: 5px;
+}
+
+.custom-pizza-container .custom-pizza-form .option-selection{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.custom-pizza-container .custom-pizza-form .option-selection option{
+    display: flex;
+    height: 25px;
+}
+
+.custom-pizza-container .custom-pizza-form .option-selection .option select{
+    height: 30px;
+    color: var(--button-text);
+    background-color: var(--background-color11);
+    padding: 0px 10px;
+}
+
+.custom-pizza-container .custom-pizza-form .btn-primary{
+    margin-top: 100px;
+}
+
+.custom-pizza-container .summary-section{
+    background-color: var(--background-color2);
+    margin-top: -200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+    width: 350px;
+    position: relative;
+}
+
+.custom-pizza-container .summary-section h2{
+    font-size: 30px;
+    text-decoration: underline;
+    color: var(--button-text);
+}
+
+.custom-pizza-container .summary-section h3{
+    color: var(--button-text);
+}
+
+.custom-pizza-container .summary-section h4{
+    color: var(--color-gold1);
+}
+
+.custom-pizza-container .images{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    text-decoration: none;
+    gap: 5px;
+    padding: 10px 0px;
+    justify-content: center;
+}
+
+.custom-pizza-container .images a{
+    background-color: var(--background-color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.custom-pizza-container .images a img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media only screen and (max-width:600px){
+    .custom-pizza-container .custom-pizza-form .title img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .custom-pizza-container .summary-section{
+        background-color: var(--background-color2);
+        margin-top: -200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 30px;
+        width: 300px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .custom-pizza-container .custom-pizza-form .title img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .custom-pizza-container .summary-section{
+        background-color: var(--background-color2);
+        margin-top: -200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 30px;
+        width: 270px;
+        position: relative;
+    }
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.container .form-control{
+    height: 27px;
+    width: 300px;
+}
+
+.container .row{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container .row .card-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .row .card-item .cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .row .card-item .cards .card{
+    margin-top: 20px;
+    background-color: var(--background-color11);
+    display: flex;
+    align-items: center;
+    width: 300px;
+    flex-direction: column;
+    height: 530px;
+    padding: 20px 10px;
+    gap: 10px;
+}
+
+.container .row .card-item .cards .card img{
+    height: 300px !important;
+    width: 300px !important;
+    border-radius: 10px;
+}
+
+.container .row .card-item .cards .card .card-content{
+    display: flex;
+    width: 300px !important;
+    flex-direction: column;
+    align-items: center;
+    color: 10px 0px;
+}
+
+.container .row .card-item .cards .card .card-content h5{
+    color: var(--color-gold1);
+}
+
+.container .row .card-item .cards .card .card-content p{
+    margin-top: -10px;
+    text-align: center;
+    color: var(--button-text);
+}
+
+.container .row .card-item .cards .card .card-content .buttons{
+    display: flex;
+    gap: 50px;
+}
+
+.container .row .card-item .cards .card .card-content .buttons button{
+    padding: 7px 15px;
+    color: var(--button-text);
+    transition: all .3s ease-in-out;
+}
+
+.container .row .card-item .cards .card .card-content .buttons button:hover{
+    border-radius: 7px;
+}
+
+.container .row .card-item .cards .card .card-content .buttons button:nth-child(1){
+    background-color: var(--button-tertiary-background);
+}
+
+.container .row .card-item .cards .card .card-content .buttons button:nth-child(2) a{
+    text-decoration: none;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+.container-add-pizza{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('data:image/svg+xml,%3Csvg width="12" height="24" viewBox="0 0 12 24" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+    height: 100vh;
+    gap: 50px;
+}
+
+.container-add-pizza .form-items{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-add-pizza .form-items .form-group select{
+    width: 300px;
+    height: 30px;
+    background-color: var(--background-color2);
+    color: var(--button-text);
+}
+
+.container-add-pizza button{
+    padding: 7px 15px;
+    color: var(--button-text);
+    background-color: var(--button-tertiary-background);
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+
+.container-update{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.container-update .ingredients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--background-color11);
+    padding: 30px 10px;
+    border-radius: 20px;
+}
+
+.container-update .ingredients .form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-update .ingredients .form-group label {
+    color: var(--button-text);
+}
+
+.container-update .ingredients .form-group input{
+    height: 27px;
+    width: 270px;
+    border-radius: 5px;
+    border: none;
+}
+
+.container-update .ingredients .form-group input:focus{
+    border: none;
+    outline: 1px solid var(--button-tertiary-background);
+}
+
+.container-update .ingredients button{
+    padding: 7px 15px;
+    background-color: var(--button-tertiary-background);
+    color: var(--button-text);
+    border-radius: 7px;
+}
+
